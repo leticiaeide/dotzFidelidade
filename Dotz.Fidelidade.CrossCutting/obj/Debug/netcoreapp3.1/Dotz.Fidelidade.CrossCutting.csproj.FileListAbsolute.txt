@@ -1,0 +1,14 @@
+C:\Users\leticia.eide\source\repos\Dotz.Fidelidade\Dotz.Fidelidade.CrossCutting\bin\Debug\netcoreapp3.1\Dotz.Fidelidade.CrossCutting.deps.json
+C:\Users\leticia.eide\source\repos\Dotz.Fidelidade\Dotz.Fidelidade.CrossCutting\bin\Debug\netcoreapp3.1\Dotz.Fidelidade.CrossCutting.dll
+C:\Users\leticia.eide\source\repos\Dotz.Fidelidade\Dotz.Fidelidade.CrossCutting\bin\Debug\netcoreapp3.1\Dotz.Fidelidade.CrossCutting.pdb
+C:\Users\leticia.eide\source\repos\Dotz.Fidelidade\Dotz.Fidelidade.CrossCutting\bin\Debug\netcoreapp3.1\Dotz.Fidelidade.Data.dll
+C:\Users\leticia.eide\source\repos\Dotz.Fidelidade\Dotz.Fidelidade.CrossCutting\bin\Debug\netcoreapp3.1\Dotz.Fidelidade.Domain.dll
+C:\Users\leticia.eide\source\repos\Dotz.Fidelidade\Dotz.Fidelidade.CrossCutting\bin\Debug\netcoreapp3.1\Dotz.Fidelidade.Data.pdb
+C:\Users\leticia.eide\source\repos\Dotz.Fidelidade\Dotz.Fidelidade.CrossCutting\bin\Debug\netcoreapp3.1\Dotz.Fidelidade.Domain.pdb
+C:\Users\leticia.eide\source\repos\Dotz.Fidelidade\Dotz.Fidelidade.CrossCutting\obj\Debug\netcoreapp3.1\Dotz.Fidelidade.CrossCutting.csprojAssemblyReference.cache
+C:\Users\leticia.eide\source\repos\Dotz.Fidelidade\Dotz.Fidelidade.CrossCutting\obj\Debug\netcoreapp3.1\Dotz.Fidelidade.CrossCutting.AssemblyInfoInputs.cache
+C:\Users\leticia.eide\source\repos\Dotz.Fidelidade\Dotz.Fidelidade.CrossCutting\obj\Debug\netcoreapp3.1\Dotz.Fidelidade.CrossCutting.AssemblyInfo.cs
+C:\Users\leticia.eide\source\repos\Dotz.Fidelidade\Dotz.Fidelidade.CrossCutting\obj\Debug\netcoreapp3.1\Dotz.Fidelidade.CrossCutting.csproj.CoreCompileInputs.cache
+C:\Users\leticia.eide\source\repos\Dotz.Fidelidade\Dotz.Fidelidade.CrossCutting\obj\Debug\netcoreapp3.1\Dotz.Fidelidade.CrossCutting.csproj.CopyComplete
+C:\Users\leticia.eide\source\repos\Dotz.Fidelidade\Dotz.Fidelidade.CrossCutting\obj\Debug\netcoreapp3.1\Dotz.Fidelidade.CrossCutting.dll
+C:\Users\leticia.eide\source\repos\Dotz.Fidelidade\Dotz.Fidelidade.CrossCutting\obj\Debug\netcoreapp3.1\Dotz.Fidelidade.CrossCutting.pdb

@@ -1,0 +1,12 @@
+C:\Users\leticia.eide\source\repos\Dotz.Fidelidade\Dotz.Fidelidade.Data\bin\Debug\netcoreapp3.1\Dotz.Fidelidade.Data.deps.json
+C:\Users\leticia.eide\source\repos\Dotz.Fidelidade\Dotz.Fidelidade.Data\bin\Debug\netcoreapp3.1\Dotz.Fidelidade.Data.dll
+C:\Users\leticia.eide\source\repos\Dotz.Fidelidade\Dotz.Fidelidade.Data\bin\Debug\netcoreapp3.1\Dotz.Fidelidade.Data.pdb
+C:\Users\leticia.eide\source\repos\Dotz.Fidelidade\Dotz.Fidelidade.Data\bin\Debug\netcoreapp3.1\Dotz.Fidelidade.Domain.dll
+C:\Users\leticia.eide\source\repos\Dotz.Fidelidade\Dotz.Fidelidade.Data\bin\Debug\netcoreapp3.1\Dotz.Fidelidade.Domain.pdb
+C:\Users\leticia.eide\source\repos\Dotz.Fidelidade\Dotz.Fidelidade.Data\obj\Debug\netcoreapp3.1\Dotz.Fidelidade.Data.csprojAssemblyReference.cache
+C:\Users\leticia.eide\source\repos\Dotz.Fidelidade\Dotz.Fidelidade.Data\obj\Debug\netcoreapp3.1\Dotz.Fidelidade.Data.AssemblyInfoInputs.cache
+C:\Users\leticia.eide\source\repos\Dotz.Fidelidade\Dotz.Fidelidade.Data\obj\Debug\netcoreapp3.1\Dotz.Fidelidade.Data.AssemblyInfo.cs
+C:\Users\leticia.eide\source\repos\Dotz.Fidelidade\Dotz.Fidelidade.Data\obj\Debug\netcoreapp3.1\Dotz.Fidelidade.Data.csproj.CoreCompileInputs.cache
+C:\Users\leticia.eide\source\repos\Dotz.Fidelidade\Dotz.Fidelidade.Data\obj\Debug\netcoreapp3.1\Dotz.Fidelidade.Data.csproj.CopyComplete
+C:\Users\leticia.eide\source\repos\Dotz.Fidelidade\Dotz.Fidelidade.Data\obj\Debug\netcoreapp3.1\Dotz.Fidelidade.Data.dll
+C:\Users\leticia.eide\source\repos\Dotz.Fidelidade\Dotz.Fidelidade.Data\obj\Debug\netcoreapp3.1\Dotz.Fidelidade.Data.pdb
