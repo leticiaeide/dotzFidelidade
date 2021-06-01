@@ -1,0 +1,30 @@
+version: '3.8'
+services:
+  api:
+    image: leticiaeide/dotzfidelidade:latest
+    container_name: dotzfidelidade-api
+    build:
+      context: ../
+      dockerfile: ./Dotz.Fidelidade.Api/Dockerfile
+    ports:
+      - "1986:80"
+    networks:
+      - minha_rede
+    depends_on:
+      - mysql_db
+    environment:
+        - ConnectionStrings__DefaultConnection:server=mysql_db;database=dotzfidelidade;user=banana;password=banana
+
+  mysql_db:
+    image: mysql:8.0
+    networks:
+      - minha_rede
+    environment:
+      MYSQL_DATABASE: dotzfidelidade
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: banana
+      MYSQL_PASSWORD: banana
+
+networks:
+  minha_rede:
+    driver: bridge
