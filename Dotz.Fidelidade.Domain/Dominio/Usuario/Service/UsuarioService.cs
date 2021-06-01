@@ -4,6 +4,7 @@ using Dotz.Fidelidade.Domain.Dominio.Usuario.Filtros;
 using Dotz.Fidelidade.Domain.Dominio.Usuario.Interfaces;
 using Dotz.Fidelidade.Domain.Dominio.Usuario.Interfaces.Services;
 using Dotz.Fidelidade.Domain.Interfaces;
+using Dotz.Fidelidade.Domain.Util;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
@@ -41,12 +42,12 @@ namespace Dotz.Fidelidade.Domain.Dominio.Usuario.Service
             var usuario = new User();
 
             if (!usuario.EmailValido(request.Email))
-                throw new Exception("Formato E-mail Inválido");
+                throw new Exception("Formato E-mail Inválido"); 
 
-            usuario.ConverterDominio(request.Email, request.Senha);
+            usuario.ConverterDominio(request.Email, GeneratorMd5.GerarHashMd5(request.Senha));
 
             if (UsuarioJaExiste(usuario))
-                throw new Exception("E-mail já cadastrado");
+                throw new Exception("E-mail já cadastrado");         
 
             var retorno = await _repository.SalvarAsync(usuario);
 

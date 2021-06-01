@@ -71,7 +71,7 @@ namespace Dotz.Fidelidade.Tests.Services
         }
 
         [Fact]
-        public async Task Deve_exibir_Excessao_Ao_Verificar_Quantidade_Pontos_Produto_Insuficiente_Para_Resgate()
+        public async Task Deve_exibir_Excecao_Ao_Verificar_Quantidade_Pontos_Produto_Insuficiente_Para_Resgate()
         {
             var request = PreencherRequest();
             request.PontosAcumuladosUtilizados = 100;
@@ -93,7 +93,7 @@ namespace Dotz.Fidelidade.Tests.Services
         }
 
         [Fact]
-        public async Task Deve_exibir_Excessao_Ao_Verificar_Quantidade_Pontos_Total_Insuficiente_Para_Resgate()
+        public async Task Deve_exibir_Excecao_Ao_Verificar_Quantidade_Pontos_Total_Insuficiente_Para_Resgate()
         {
             var request = PreencherRequest();    
             var produto = ObterProdutoResgate();

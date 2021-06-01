@@ -2,6 +2,7 @@
 using Dotz.Fidelidade.Domain.Dominio.Usuario;
 using Dotz.Fidelidade.Domain.Dominio.Usuario.Arguments;
 using Dotz.Fidelidade.Domain.Dominio.Usuario.Interfaces;
+using Dotz.Fidelidade.Domain.Util;
 using System;
 using System.Threading.Tasks;
 
@@ -21,18 +22,14 @@ namespace Dotz.Fidelidade.Domain.Dominio.Autenticacao.Service
             var usuarioToken = new UsuarioToken();
             usuarioToken.ConverterDominio(request.Email, request.Senha, request.Perfil);
 
-            if (usuarioToken.PerfilAdministrador() && !DadosAutenticacaoAdministradorValidos(usuarioToken))
-                throw new Exception("Usuário Administrador inválido");
-
-            var usuarioExiste = await _repository.ObterPorEmailAsync(request.Email);
-
-            if (usuarioExiste == null)
-                throw new Exception("Usuário não encontrado para o e-mail");
-
-            if (!SenhaValida(usuarioExiste.Senha, request.Senha))
-                throw new Exception("Senha usuário inválida");
-
-            return AutenticacaoJwtService.GenerateToken(usuarioToken);
+            if (usuarioToken.PerfilAdministrador())
+            {
+                return await GerarTokenPerfilAdministrador(request,usuarioToken);
+            }
+            else
+            {
+                return await GerarTokenPerfilUsuario(request, usuarioToken);
+            }    
         }
 
         private bool DadosAutenticacaoAdministradorValidos(UsuarioToken usuarioToken)
@@ -41,8 +38,34 @@ namespace Dotz.Fidelidade.Domain.Dominio.Autenticacao.Service
         }
 
         private bool SenhaValida(string senha, string senhaToken)
+        {           
+            return GeneratorMd5.GerarHashMd5(senha) == GeneratorMd5.GerarHashMd5(senhaToken);
+        }
+
+        private async Task<string> GerarTokenPerfilUsuario(UsuarioRequest request, UsuarioToken usuarioToken)
         {
-            return senha == senhaToken;
+            var user = await _repository.ObterPorEmailAsync(request.Email);
+
+            if (user == null && request.Perfil == Enums.Perfil.Usuario)
+                throw new Exception("Usuário não encontrado para o e-mail");
+
+            if (!SenhaValida(user.Senha, request.Senha))
+                throw new Exception("Senha usuário inválida");
+
+            return AutenticacaoJwtService.GenerateToken(usuarioToken);
+        }
+
+
+        private async Task<string> GerarTokenPerfilAdministrador(UsuarioRequest request, UsuarioToken usuarioToken)
+        {
+            if (DadosAutenticacaoAdministradorValidos(usuarioToken))
+            {
+                return AutenticacaoJwtService.GenerateToken(usuarioToken);
+            }
+            else
+            {
+                throw new Exception("Usuário administrador inválido");
+            }
         }
     }
 }

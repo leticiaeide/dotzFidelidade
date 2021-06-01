@@ -21,7 +21,7 @@ namespace Dotz.Fidelidade.Data.Migrations
             Create.Table("Usuario")
                 .WithColumn("Id").AsInt32().NotNullable().Identity().PrimaryKey()
                 .WithColumn("Email").AsAnsiString(100).NotNullable()
-                .WithColumn("Senha").AsAnsiString(20).NotNullable();
+                .WithColumn("Senha").AsAnsiString(255).NotNullable();
 
             Create.Table("UsuarioEndereco")
                  .WithColumn("Id").AsInt32().NotNullable().Identity().PrimaryKey()
@@ -92,7 +92,7 @@ namespace Dotz.Fidelidade.Data.Migrations
             InsertProduto(3, "Geladeira", 500);
             InsertProduto(5, "TV", 1000);
 
-            InsertUsuario(1, "eide.leticia@gmail.com", "123456");
+            InsertUsuario(1, "eide.leticia@gmail.com", "e10adc3949ba59abbe56e057f20f883e");
 
             InsertProdutoResgateMovimentacaoSaida(1, 1, 1, 100, 2);
             InsertProdutoResgateMovimentacaoEntrada(2, 1, 1, 100, 1);

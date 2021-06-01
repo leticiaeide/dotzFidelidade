@@ -19,6 +19,6 @@ namespace Dotz.Fidelidade.Domain.Dominio.Usuario
             Regex rg = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
 
             return rg.IsMatch(email);  
-        }
+        }       
     }
 }
